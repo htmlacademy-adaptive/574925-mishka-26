@@ -1,14 +1,15 @@
 .contacts {
   padding-top: 30px;
   padding-bottom: 39px;
+  background-color: $bg-color;
 
   @media (min-width: $tablet-width) {
-    padding-top: 53px;
+    padding-top: 68px;
     padding-bottom: 57px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 62px;
+    padding-top: 72px;
     padding-bottom: 104px;
   }
 }
@@ -45,11 +46,11 @@
 
   @media (min-width: $desktop-width) {
     width: 1150px;
-    padding: 0 50px;
+    padding-right: 50px;
     padding-left: 225px;
     display: grid;
-    grid-template-columns: 1fr 527px;
-    grid-template-rows: 170px auto auto;
+    grid-template-columns: auto 527px;
+    grid-template-rows: minmax(136px, auto) auto auto;
     grid-column-gap: 23px;
   }
 }
@@ -68,7 +69,6 @@
     width: auto;
     margin: 0;
     padding-top: 78px;
-    align-self: stretch;
     grid-area: 1 / 1 / 2 / 2;
   }
 }
@@ -87,21 +87,15 @@
     grid-column-gap: 25px;
     font-size: 17px;
     grid-template-columns: 308px 334px;
-    // grid-column-gap: 25px;
   }
 
   @media (min-width: $desktop-width) {
     width: 327px;
-    // grid-template-columns: auto 249px;
-    // grid-template-rows: repeat(2, auto);
-    // grid-column-gap: 0;
     grid-area: 2 / 1 / 3 / 2;
     grid-template-columns: auto;
     grid-template-rows: repeat(2, auto);
     margin-bottom: 0;
-    // display: flex;
-    // flex-direction: column;
-    // flex-wrap: wrap;
+    padding-top: 34px;
   }
 }
 
@@ -128,15 +122,10 @@
   padding: 0;
   max-width: 80px;
 
-  // &--email {
-  //   @media (min-width: $tablet-width) {
-  //   }
-  // }
-
-  // &--adress {
-  //   @media (min-width: $tablet-width) {
-  //   }
-  // }
+  @media (min-width: $desktop-width) {
+    max-width: 78px;
+    padding-right: 5px;
+  }
 }
 
 .contacts__detail-value {
@@ -151,7 +140,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-right: 46px;
+      width: 249px;
+      padding-right: 0;
     }
   }
 
@@ -162,7 +152,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      max-width: 250px;
+      width: 249px;
     }
   }
 }
@@ -217,8 +207,6 @@
 .contacts__inner {
   @media (min-width: $desktop-width) {
     grid-area: 1 / 2 / 4 / 3;
-    width: 527px;
-    height: 457px;
   }
 }
 
@@ -233,6 +221,7 @@
 
     @media (min-width: $desktop-width) {
       width: 527px;
+      height: 457px;
     }
   }
 }
@@ -251,7 +240,7 @@
 
   @media (min-width: $desktop-width) {
     grid-area: 3 / 1 / 4 / 2;
-    align-self: stretch;
+    // align-self: stretch;
     margin: 0;
     margin-top: auto;
   }

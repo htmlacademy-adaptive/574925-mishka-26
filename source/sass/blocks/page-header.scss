@@ -1,51 +1,57 @@
 .page-header {
   box-shadow: 0 1px 0 0 #ececec inset, 0 -1px 0 0 #ececec inset;
+  background-color: $bg-color;
 
   @media (min-width: $tablet-width) {
-    box-shadow: 0 -1px 0 0 #ececec inset;
+    background-color: transparent;
+    // box-shadow: 0 -1px 0 0 #ececec inset;
+    box-shadow: none;
+    position: relative;
+    z-index: 3;
   }
 }
 
 .page-header .container {
-  width: 320px;
   min-height: 79px;
-  padding: 0;
-  padding-top: 22px;
-  padding-bottom: 22px;
+  background-color: $bg-color;
+  box-shadow: 0 -1px 0 0 #ececec inset;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
-    min-height: 89px;
+    min-height: auto;
     padding-left: 50px;
     padding-right: 50px;
+    position: relative;
+    box-shadow: none;
   }
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
-    padding-top: 9px;
-    padding-bottom: 7px;
   }
 }
 
 .page-header__logo {
   display: block;
-  margin-left: 116px;
   width: 86px;
   height: 35px;
-  position: relative;
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
 
   @media (min-width: $tablet-width) {
-    margin-left: 0;
     width: 113px;
     height: 46px;
-    z-index: 3;
+    left: 104px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: auto;
-    margin-right: auto;
     width: 149px;
     height: 72px;
+    top: 9px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   &[href]:focus {
@@ -74,4 +80,8 @@
     width: 149px;
     height: 72px;
   }
+}
+
+.page-header__navigation {
+  padding-top: 0;
 }

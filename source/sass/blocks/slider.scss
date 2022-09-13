@@ -2,7 +2,13 @@
   @include list-reset;
 }
 
-// .slider__item {}
+.slider__item {
+  display: none;
+
+  &:first-child {
+    display: block;
+  }
+}
 
 .slider__inner {
   display: flex;

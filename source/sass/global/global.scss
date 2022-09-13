@@ -9,13 +9,13 @@ html {
 }
 
 body {
-  font-family: "opensans", sans-serif;
+  font-family: "opensans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 24px;
   font-weight: 400;
   font-style: normal;
   color: $font-color-main;
-  background-color: $bg-color;
+  background-color: $bg-color-light;
 }
 
 main {
@@ -106,7 +106,6 @@ textarea {
   width: 320px;
   padding: 0 30px;
   margin: 0 auto;
-  // outline: 1px solid red;
 
   @media (min-width: $tablet-width) {
     width: 768px;

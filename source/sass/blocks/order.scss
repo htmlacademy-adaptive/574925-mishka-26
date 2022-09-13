@@ -1,6 +1,7 @@
 .order__inner {
   padding-top: 17px;
   padding-bottom: 55px;
+  background-color: $bg-color;
 
   @media (min-width: $tablet-width) {
     padding-top: 64px;
@@ -8,13 +9,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 115px;
+    padding-top: 109px;
   }
 }
 
 .order__text {
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 29px;
   font-size: 13px;
 
   @media (min-width: $tablet-width) {

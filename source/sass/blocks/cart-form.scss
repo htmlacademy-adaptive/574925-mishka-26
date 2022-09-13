@@ -29,6 +29,10 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(3, 112px);
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 33px;
+  }
 }
 
 .cart-form__inner {
@@ -72,7 +76,6 @@
   }
 }
 
-
 .cart-form__btn {
   width: 260px;
   padding-top: 16px;
@@ -85,5 +88,6 @@
     width: 350px;
     font-size: 17px;
     line-height: 16px;
+    padding-top: 20px;
   }
 }
