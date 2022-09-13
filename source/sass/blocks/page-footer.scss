@@ -17,21 +17,6 @@
   flex-direction: column;
   position: relative;
 
-  // &::before {
-  //   position: absolute;
-  //   content: "";
-  //   width: 260px;
-  //   height: 1px;
-  //   top: 50%;
-  //   left: 30px;
-  //   transform: translateY(-2px);
-  //   background-color: #e5e5e5;
-
-  //   @media (min-width: $tablet-width) {
-  //     display: none;
-  //   }
-  // }
-
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;

@@ -15,18 +15,20 @@
   </head>
 
   <body class="page__body">
-    <header class="page__header page-header">
-      <div class="container">
-        <a class="page-header__logo">
-          <picture>
-            <source media="(min-width: 1150px)" srcset="img/svg/mishka-logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/svg/mishka-logo-tablet.svg">
-            <img class="page-header__img" src="img/svg/mishka-logo-mobile.svg" width="86" height="35"
-              alt="магазин товаров ручной работы Мишка.">
-          </picture>
-        </a>
+    <header class="page-header">
+      <div class="page-header__bar">
+        <div class="container">
+          <a class="page-header__logo">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/svg/mishka-logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/svg/mishka-logo-tablet.svg">
+              <img class="page-header__img" src="img/svg/mishka-logo-mobile.svg" width="86" height="35"
+                alt="магазин товаров ручной работы Мишка.">
+            </picture>
+          </a>
+        </div>
       </div>
-      <nav class="page-header__navigation navigation">
+      <nav class="page-header__navigation navigation navigation--no-js">
         <button class="navigation__toggle navigation__toggle--no-js" type="button">
           <svg class="navigation__toggle-icon navigation__toggle-icon--open" aria-hidden="true" focusable="false"
             fill="currentColor" width="20" height="14">
@@ -38,47 +40,37 @@
           </svg>
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="navigation__container navigation__container--no-js">
-          <div class="navigation__wrapper navigation__wrapper--user">
-            <ul class="navigation__list navigation__list--user user-list">
-              <li class="navigation__item user-list__item user-list__item--search">
-                <a class=" navigation__link user-list__link user-list__link--search" href="#">
-                  <svg aria-hidden="true" focusable="false" fill="currentColor" width="18" height="18">
-                    <use xlink:href="img/sprite.svg#icon-search"></use>
-                  </svg>
-                  <span class="user-list__link-text">Поиск по сайту</span>
-                </a>
-              </li>
-              <li class="navigation__item user-list__item user-list__item--cart">
-                <a class="navigation__link user-list__link user-list__link--cart" href="#">
-                  <svg aria-hidden="true" focusable="false" fill="currentColor" width="21" height="18">
-                    <use xlink:href="img/sprite.svg#icon-cart"></use>
-                  </svg>
-                  <span class="user-list__link-text">Корзина: пока пуста</span>
-                </a>
-              </li>
-            </ul>
+        <div class="navigation__wrapper navigation__wrapper--no-js">
+          <ul class="navigation__list navigation__list--site site-list">
+            <li class="navigation__item site-list__item site-list__item--catalog">
+              <a class="navigation__link site-list__link site-list__link--catalog" href="catalog.html">Каталог
+                товаров</a>
+            </li>
+            <li class="navigation__item site-list__item site-list__item--form">
+              <a class="navigation__link site-list__link site-list__link--form" href="order.html">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="navigation__list navigation__list--user user-list">
+            <li class="navigation__item user-list__item user-list__item--search">
+              <a class="navigation__link user-list__link user-list__link--search" href="#"><svg aria-hidden="true"
+                  focusable="false" fill="currentColor" width="18" height="18">
+                  <use xlink:href="img/sprite.svg#icon-search"></use>
+                </svg>
+                <span class="user-list__link-text">Поиск по сайту</span></a>
+            </li>
+            <li class="navigation__item user-list__item user-list__item--cart">
+              <a class="navigation__link user-list__link user-list__link--cart" href="#"><svg aria-hidden="true"
+                  focusable="false" fill="currentColor" width="21" height="18">
+                  <use xlink:href="img/sprite.svg#icon-cart"></use>
+                </svg>
+                <span class="user-list__link-text">Корзина: пока пуста</span></a>
+            </li>
+          </ul>
+          <div class="navigation__inner">
+            <a class="navigation__link navigation__link--new" href="#">Новые поступления</a>
+            <a class="navigation__link navigation__link--sale" href="#">Распродажа</a>
           </div>
-          <div class="navigation__wrapper navigation__wrapper--site">
-            <ul class="navigation__list navigation__list--site site-list">
-              <li class="navigation__item site-list__item">
-                <a class="navigation__link site-list__link site-list__link--catalog" href="catalog.html">Каталог
-                  товаров</a>
-              </li>
-              <li class="navigation__item site-list__item site-list__item--form">
-                <a class="navigation__link site-list__link site-list__link--form" href="order.html">Вязание на заказ</a>
-              </li>
-            </ul>
-          </div>
-          <div class="navigation__wrapper navigation__wrapper--note">
-            <small class="navigation__note">Бесплатная доставка по России</small>
-          </div>
-          <div class="navigation__wrapper navigation__wrapper--links">
-            <div class="navigation__inner">
-              <a class="navigation__link" href="#">Новые поступления</a>
-              <a class="navigation__link" href="#">Распродажа</a>
-            </div>
-          </div>
+          <small class="navigation__note">Бесплатная доставка по России</small>
         </div>
       </nav>
     </header>
@@ -231,9 +223,9 @@
             </div>
           </dl>
           <div class="contacts__inner map">
-            <iframe class="map__wrapper"
+            <iframe class="map__wrapper map__wrapper--no-js"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.65094655740705!2d30.32249888817768!3d59.93871649886171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1660761903647!5m2!1sru!2sby"
-              width="768" height="457" style="border: 0;" allowfullscreen="" loading="lazy"
+              width="768" height="454" style="border: 0;" allowfullscreen="" loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"></iframe>
             <picture>
               <source type="image/webp" media="(min-width: 1150px)"
@@ -243,7 +235,7 @@
               <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
               <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.png 1x, img/map-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/map-tablet@1x.png 1x, img/map-tablet@2x.png 2x">
-              <img class="contacts__img" width="320" height="454" src="img/map-mobile@1x.png"
+              <img class="contacts__img contacts__img--no-js" width="320" height="454" src="img/map-mobile@1x.png"
                 srcset="img/map-mobile@2x.png 2x" alt="г. Санкт-Петербургул. Большая Конюшеннаяд. 19/8,
                       офис 101.">
             </picture>

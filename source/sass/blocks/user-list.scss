@@ -1,27 +1,14 @@
-.user-list__item {
-  &--search {
-    @media (min-width: $tablet-width) {
-      display: flex;
-    }
-  }
-
-  &--cart {
-    @media (min-width: $tablet-width) {
-      flex-grow: 1;
-    }
-  }
-}
-
 .user-list__link {
+  min-height: 79px;
   position: relative;
   font-size: 17px;
-  min-height: 79px;
   display: flex;
   align-items: center;
   padding-left: 76px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 10px;
+  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
 
   &--search {
     & svg {
@@ -45,7 +32,6 @@
     @media (min-width: $tablet-width) {
       padding: 0;
       width: 82px;
-      min-height: 88px;
       border-left: 1px solid #ececec;
     }
   }
@@ -66,8 +52,12 @@
     @media (min-width: $tablet-width) {
       padding-right: 0;
       padding-left: 82px;
-      min-height: 88px;
       border-left: 1px solid #ececec;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 88px;
+    box-shadow: none;
   }
 }

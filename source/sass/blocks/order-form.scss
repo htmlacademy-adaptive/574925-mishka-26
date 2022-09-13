@@ -44,18 +44,6 @@
       padding-top: 50px;
       padding-bottom: 26px;
     }
-
-    // @media (min-width: $desktop-width) {
-    //   padding-top: 51px;
-    // }
-
-    // & .container {
-    //   @media (min-width: $tablet-width) {}
-
-    //   @media (min-width: $desktop-width) {
-    //     padding-right: 225px;
-    //   }
-    // }
   }
 
   &--phone {
@@ -66,12 +54,6 @@
       padding-top: 50px;
       padding-bottom: 0;
     }
-
-    // & .container {
-    //   @media (min-width: $desktop-width) {
-    //     padding-right: 225px;
-    //   }
-    // }
   }
 
   &--email {
@@ -81,12 +63,6 @@
       background-color: #f1f1f1;
       padding-bottom: 26px;
     }
-
-    // & .container {
-    //   @media (min-width: $desktop-width) {
-    //     padding-right: 225px;
-    //   }
-    // }
   }
 
   &--addition {
@@ -98,12 +74,6 @@
     @media (min-width: $desktop-width) {
       padding-bottom: 25px;
     }
-
-    // & .container {
-    //   @media (min-width: $desktop-width) {
-    //     padding-right: 225px;
-    //   }
-    // }
   }
 }
 

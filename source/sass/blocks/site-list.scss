@@ -9,6 +9,7 @@
 }
 
 .site-list__link {
+  font-size: 17px;
   min-height: 79px;
   display: flex;
   align-items: center;
@@ -16,18 +17,19 @@
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 10px;
-  font-size: 17px;
+  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
 
   @media (min-width: $tablet-width) {
-    font-size: 15px;
     min-height: auto;
+    font-size: 15px;
     padding-left: 0;
     padding-top: 0;
+    box-shadow: none;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 17px;
     min-height: 88px;
+    font-size: 17px;
     padding: 0;
     border-right: 1px solid #ececec;
   }

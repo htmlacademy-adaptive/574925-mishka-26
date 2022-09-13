@@ -1,5 +1,5 @@
 .contacts {
-  padding-top: 30px;
+  padding-top: 38px;
   padding-bottom: 39px;
   background-color: $bg-color;
 
@@ -92,9 +92,9 @@
   @media (min-width: $desktop-width) {
     width: 327px;
     grid-area: 2 / 1 / 3 / 2;
-    grid-template-columns: auto;
-    grid-template-rows: repeat(2, auto);
-    margin-bottom: 0;
+    margin-bottom: 82px;
+    display: flex;
+    flex-direction: column;
     padding-top: 34px;
   }
 }
@@ -111,7 +111,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 2px;
+      margin-bottom: 30px;
     }
   }
 }
@@ -205,8 +205,17 @@
 }
 
 .contacts__inner {
+  font-size: 0;
+  line-height: 0;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 56px;
+  }
+
   @media (min-width: $desktop-width) {
     grid-area: 1 / 2 / 4 / 3;
+    margin-bottom: 0;
   }
 }
 
@@ -215,9 +224,10 @@
   margin: 0 auto;
   width: 100%;
 
-  &--show {
+  &--show,
+  &--no-js {
     display: block;
-    height: 457px;
+    height: 454px;
 
     @media (min-width: $desktop-width) {
       width: 527px;
@@ -230,18 +240,15 @@
   display: block;
   width: 260px;
   margin: 0 auto;
-  margin-top: 35px;
 
   @media (min-width: $tablet-width) {
     width: 230px;
-    margin-top: 51px;
     font-size: 17px;
   }
 
   @media (min-width: $desktop-width) {
     grid-area: 3 / 1 / 4 / 2;
-    // align-self: stretch;
     margin: 0;
-    margin-top: auto;
+    align-self: start;
   }
 }
