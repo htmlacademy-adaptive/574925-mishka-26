@@ -1,0 +1,31 @@
+.interactive {
+  display: inline-block;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border: 2px solid $bg-color-dark;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: $font-color-main;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  background-color: transparent;
+  text-transform: uppercase;
+
+  &:focus {
+    color: $font-color-light;
+    background-color: $bg-color-dark;
+    outline: none;
+  }
+
+  &:hover {
+    color: $font-color-light;
+    background-color: $bg-color-dark;
+  }
+
+  &:active {
+    color: rgba($font-color-light, 0.3);
+    background-color: $bg-color-dark;
+  }
+}
